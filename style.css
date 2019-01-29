@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #105e62;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #009f9d;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+hr {
+  width: 7%;
+  border-top: dotted 5px;
+  color: #f38181;
+}
+
+/*========================nav section============================*/
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #b9e6d3;
+}
+
+.img-wrapper {
+  width: 25%;
+  margin-left: 15%;
+  padding-top: 20px;
+}
+
+.nav-buttons {
+  display: block;
+  text-align: right;
+  margin-right: 15%;
+  padding-top: 75px;
+  width: 75%;
+}
+
+.nav-buttons a {
+  padding-right: 25px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #105e62;
+}
+
+.nav-buttons a:hover {
+  color: #009f9d;
+}
+
+.nav-buttons a:active {
+  color: #009f9d;
+}
+
+/*============================intro section========================*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #b9e6d3;
+  margin-bottom: 100px;
+}
+
+.intro h1{
+  margin: 0;
+  color: #105e62;
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 4.5em;
+}
+
+
+/*========================profile section========================*/
+.profile {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 250px;
+}
+
+
+
+
+
+/*=======================skills section==========================*/
+.skills {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+.table-section {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+
+/*======================recent work section======================*/
+.recent-work {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.recent-work-1 {
+  padding-right: 25px;
+}
+
+.recent-work-2 {
+  padding-right: 25px;
+}
+
+.recent-work-3 {
+  padding-right: 25px;
+}
+
+/*=========================proects section========================*/
+
+/*======================contact me section=======================*/
+
+.contact-me {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.contact-me a {
+  text-decoration: none;
+  background-color: #105e62;
+  color: #009f9d;
+}
+
+.contact-me a:hover {
+  color: #f38181;
+}
+
+button {
+  background-color: #105e62;
+}
+
+/*=========================footer section========================*/
+
+.footer {
+  text-align: center;
+  padding: 12px 0 12px 0;
+  background-color: #b9e6d3;
+  color: #105e62;
+}
+
+.footer a {
+  margin-right: 60px;
+  text-decoration: none;
+  color: #105e62;
+}
+
+.footer a:hover {
+  color: #009f9d;
+}
+
+.footer p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: .6em;
+}
