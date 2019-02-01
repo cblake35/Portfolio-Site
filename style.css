@@ -212,3 +212,34 @@ button:hover {
   padding-top: 10px;
   font-size: .6em;
 }
+
+
+
+/*===============================PROJECT PAGE==========================*/
+.project-intro {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.project-wrapper {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 120px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+.project-info {
+  padding-top: 10px;
+  width: 65%;
+}
+
+.project-img {
+  width: 35%;
+  padding-left: 65px;
+}
