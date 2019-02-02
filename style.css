@@ -177,6 +177,7 @@ nav {
 
 button {
   background-color: #105e62;
+  color: #009f9d;
   font-size: 1.1em;
   padding: 7px;
   border: 0;
@@ -217,14 +218,14 @@ button:hover {
 
 /*===============================PROJECT PAGE==========================*/
 .project-intro {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 23%;
+  margin-right: 23%;
   text-align: center;
 }
 
 .project-wrapper {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 23%;
+  margin-right: 23%;
   margin-bottom: 120px;
 }
 
@@ -236,10 +237,36 @@ button:hover {
 
 .project-info {
   padding-top: 10px;
+  padding-right: 30px;
   width: 65%;
 }
 
 .project-img {
   width: 35%;
-  padding-left: 65px;
+}
+
+/*==================================CONTACT PAGE========================*/
+.contact {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.submit-button {
+  background-color: #105e62;
+  color: #009f9d;
+  font-size: 1.1em;
+  padding: 7px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
+  background-color: #0b3e41;
+}
+
+label {
+  font-size: 1.4em;
+  color: #009f9d;
+  font-family: 'Hammersmith One', sans-serif;
+  margin: 15px 0 15px 0;
 }
