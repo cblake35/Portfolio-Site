@@ -20,7 +20,16 @@
     <a href="projects.html">Projects</a>
     <a href="contact-me.html">Contact</a>
   </div>
+  <div id="menu_icon">
+      <p> ☰ </p>
+  </div>
 </nav>
+
+<div class="nav-drawer">
+  <a href="index.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact-me.html">Contact</a>
+</div>
 
 <body>
   <div class="wrapper">
@@ -40,7 +49,7 @@
           <label> Subject </label><br>
           <input type="text" name="subject"><br><br>
           <label> Your Message </label><br>
-          <textarea name="yourMessage" rows="8" cols="50"></textarea><br><br>
+          <textarea name="yourMessage" rows="8" cols="40"></textarea><br><br>
           <input type="submit" class='submit-button'>
         </form>
       </div>
@@ -53,4 +62,14 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p>© 2019 Chris Blake. All rights reserved.</p>
   </div>
+
+  <script>
+        var menu = document.querySelector("#menu_icon");
+        var drawer = document.querySelector(".nav-drawer")
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+  </script>
 </body>

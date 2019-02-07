@@ -19,7 +19,16 @@
     <a href="projects.html">Projects</a>
     <a href="contact-me.html">Contact</a>
   </div>
+  <div id="menu_icon">
+      <p> ☰ </p>
+  </div>
 </nav>
+
+<div class="nav-drawer">
+  <a href="index.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact-me.html">Contact</a>
+</div>
 
 <body>
   <div class="wrapper">
@@ -106,16 +115,16 @@
       <h2>Recent Work.</h2>
       <div class="project-container">
         <div class="recent-work-1">
-          <a href="https://github.com/cblake35/Restaurant-Reviews-App"> <img src="Images\reviews_app.jpg" alt="restaurant reviews application"> </a>
-          <p>Restaurant Reviews App</p>
+          <a href="https://github.com/cblake35/Restaurant-Reviews-App"> <img src="Images\reviews_pic.png" alt="restaurant reviews application"> </a>
+          <h4>Restaurant Reviews App</h4>
         </div>
         <div class="recent-work-2">
-          <a href="https://github.com/cblake35/Insect-Escape"> <img src="Images\arcade_game.jpg" alt="frogger game"> </a>
-          <p>Insect Escape</p>
+          <a href="https://github.com/cblake35/Insect-Escape"> <img src="Images\arcade_pic.png" alt="frogger game"> </a>
+          <h4>Insect Escape</h4>
         </div>
         <div class="recent-work-3">
-          <a href="https://github.com/cblake35/Memory-Game"> <img src="Images\memory_game_pic.jpg" alt="memory game"> </a>
-          <p>Memory Game</p>
+          <a href="https://github.com/cblake35/Memory-Game"> <img src="Images\memory_pic.png" alt="memory game"> </a>
+          <h4>Memory Game</h4>
         </div>
       </div>
       <div class="view-more-box">
@@ -138,5 +147,15 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p>© 2019 Chris Blake. All rights reserved.</p>
   </div>
+
+  <script>
+        var menu = document.querySelector("#menu_icon");
+        var drawer = document.querySelector(".nav-drawer")
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+  </script>
 </body>
 </html>

@@ -20,7 +20,16 @@
     <a href="projects.html">Projects</a>
     <a href="contact-me.html">Contact</a>
   </div>
+  <div id="menu_icon">
+      <p> ☰ </p>
+  </div>
 </nav>
+
+<div class="nav-drawer">
+  <a href="index.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact-me.html">Contact</a>
+</div>
 
 <body>
   <div class="wrapper">
@@ -45,6 +54,7 @@
           <img src="Images\RRA_pic.png" alt="restaurant reviews app pic">
         </div>
       </div>
+      <hr>
       <div class="project">
         <div class="project-info">
           <h3>Jasmine Feed-Reader Testing</h3>
@@ -55,6 +65,7 @@
           <img src="Images\JFRT_pic.png" alt="feed reader testing pic">
         </div>
       </div>
+      <hr>
       <div class="project">
         <div class="project-info">
           <h3>Memory Game</h3>
@@ -65,6 +76,7 @@
           <img src="Images\MG_pic.png" alt="memory game pic">
         </div>
       </div>
+      <hr>
       <div class="project">
         <div class="project-info">
           <h3>Insect Escape</h3>
@@ -75,7 +87,6 @@
           <img src="Images\IE_pic.png" alt="insect escape pic">
         </div>
       </div>
-
     </div>
   </div>
 
@@ -85,4 +96,14 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p>© 2019 Chris Blake. All rights reserved.</p>
   </div>
+
+  <script>
+        var menu = document.querySelector("#menu_icon");
+        var drawer = document.querySelector(".nav-drawer")
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+  </script>
 </body>
