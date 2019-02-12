@@ -90,6 +90,7 @@ nav {
   text-align: center;
   background-color: #b9e6d3;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .intro h1{
@@ -97,6 +98,18 @@ nav {
   color: #105e62;
   font-family: 'Kaushan Script', sans-serif;
   font-size: 4.5em;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  max-height: auto;
+}
+
+.birds {
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 
@@ -368,8 +381,6 @@ hr {
   border-bottom-style: solid;
   border-bottom-color: #f38181;
   border-bottom-width: thin;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
 .nav-drawer a:hover {
@@ -427,9 +438,7 @@ hr {
   padding-right: 20px;
 }
 
-
 @media screen and (min-width: 801px) {
-
 .project-wrapper {
   margin-left: 5%;
   margin-right: 20%;
