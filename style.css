@@ -263,3 +263,32 @@ h3 {
 .contact_button:hover {
   background-color: skyblue;
 }
+
+/** footer styles **/
+
+footer {
+  text-align: center;
+  background-color: skyblue;
+  margin: 50px 0 0 0;
+  padding: 20px 0 20px 0;
+}
+
+footer a {
+  padding: 15px;
+  font-size: 2em;
+}
+
+footer a svg:hover {
+  color: orange;
+}
+footer a svg {
+  color: teal;
+}
+
+
+
+footer p {
+  font-size: .9em;
+  padding: 5px;
+  margin: 0;
+}
