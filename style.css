@@ -1,6 +1,23 @@
 body {
   width: 100%;
   margin: 0;
+  font-family: sans-serif;
+}
+
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #272727;
+  text-align: center;
+  font-size: 2.2em;
+  text-transform: uppercase;
+
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #272727;
+
 }
 
 
@@ -23,14 +40,23 @@ nav a {
   text-decoration: none;
   margin: 0px;
   padding: 0px 30px 0px;
-  font-size: 1.25em;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #272727;
+}
+
+nav a:hover {
+  color: #4f98ca;
 }
 
 /** intro styles **/
 
 .intro {
   height: 100vh;
-  background-color: skyblue;
+  background-image: url("Images/intro_background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -38,10 +64,15 @@ h1 {
   top: 300px;
   width: 100%;
   text-align: center;
-  font-size: 3em;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 4em;
   text-transform: uppercase;
   margin: 20px 0 20px 0;
+  color: #272727;
+}
+
+.intro p {
+  color: #272727;
 }
 
 .intro_phrase {
@@ -60,13 +91,16 @@ h1 {
 
 /** about me styles **/
 
-h2 {
-  text-align: center;
-  font-size: 2.5em;
+.about h2 {
+  padding-top: 30px;
 }
 
 .me {
   text-align: center;
+}
+
+.me img {
+  border-radius: 5px;
 }
 
 .me p {
@@ -85,29 +119,37 @@ h2 {
   font-size: 75px;
   text-align: center;
   width: 100%;
+  color: #2c92d7;
 }
 
 h3 {
   text-align: center;
+  color: white;
 }
 
 .pillars {
   padding: 20px 20px 0 20px;
   margin: 0 20px 0 20px;
-  border-radius: 15px;
-  background-color: skyblue;
+  border-radius: 10px;
+  background-color: #93b5b3;
   text-align: center;
+}
+
+.pillars p {
+  color: white;
 }
 
 /** skills section **/
 
 .skills_wrapper {
-  background-color: teal;
-  height: 90vh;
+  background-color: #effffb;
+  height: 70vh;
 }
 
 .skills_wrapper h2 {
-  padding-top: 10%;
+  padding-top: 7%;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .skills {
@@ -118,13 +160,14 @@ h3 {
 
 .skills svg {
   font-size: 40px;
+  color: #2c92d7;
 }
 
 .skill_list {
   text-align: center;
-  background-color: skyblue;
+  background-color: #93b5b3;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 120px;
 }
 
@@ -139,6 +182,7 @@ h3 {
 
 .skill_list li {
   padding: 5px 0 5px 0;
+  color: white;
 }
 
 /** recent projects **/
@@ -146,6 +190,10 @@ h3 {
 .project_list {
   display: flex;
   padding: 30px 25% 30px 25%;
+}
+
+.recent_work h2 {
+  padding-top: 30px;
 }
 
 .project_list img {
@@ -163,18 +211,18 @@ h3 {
 }
 
 .img_wrapper:hover img {
-  opacity: .30;
+  opacity: .10;
   transition: .5s ease;
 }
 
 .img_wrapper button {
-  background-color: teal;
-  border-radius: 5px;
+  background-color: #4f98ca;
+  border-radius: 3px;
   border-style: none;
 }
 
 .img_wrapper button:hover {
-  background-color: skyblue;
+  background-color: #50d890;
 }
 
 .img_wrapper a {
@@ -183,20 +231,30 @@ h3 {
   text-decoration: none;
 }
 
+.img_wrapper h3 {
+  color: #272727;
+}
+
 .img_info1 {
   position: absolute;
-  top: 30%;
-  left: 15%;
+  top: 25%;
+  left: 13%;
   text-align: center;
   display: none;
+  border-style: solid;
+  border-color: #50d890;
+  padding: 7px;
 }
 
 .img_info2 {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 25%;
+  left: 27%;
   text-align: center;
   display: none;
+  border-style: solid;
+  border-color: #50d890;
+  padding: 7px;
 }
 
 .img_wrapper:hover .img_info1 {
@@ -209,22 +267,24 @@ h3 {
 
 .button_wrapper {
   text-align: center;
-  padding: 40px;
+  padding: 5px 0 35px 0;
 }
 
 .project_button {
-  background-color: teal;
-  border-radius: 5px;
+  background-color: #4f98ca;
+  border-radius: 3px;
+  border-style: none;
 }
 
 .project_button:hover {
-  background-color: skyblue;
+  background-color: #50d890;
 }
 
 .project_button a {
   font-size: 22px;
   color: white;
   text-decoration: none;
+  border-style: none;
 }
 
 /** contact styles **/
@@ -236,19 +296,19 @@ h3 {
 .contact_link h2 {
   text-transform: uppercase;
   margin: 15px 0 15px 0;
-  color: teal;
+  color: #272727;
 }
 
 .contact_link h3 {
-  color: skyblue;
+  color: #2c92d7;;
   margin: 10px 0 10px 0;
 }
 
 .contact_button {
-  font-size: 18px;
-  background-color: teal;
+  font-size: 22px;
+  background-color: #4f98ca;
   border-style: none;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .contact_link p {
@@ -261,14 +321,14 @@ h3 {
 }
 
 .contact_button:hover {
-  background-color: skyblue;
+  background-color: #50d890;
 }
 
 /** footer styles **/
 
 footer {
   text-align: center;
-  background-color: skyblue;
+  background-color: #272727;
   margin: 50px 0 0 0;
   padding: 20px 0 20px 0;
 }
@@ -279,10 +339,10 @@ footer a {
 }
 
 footer a svg:hover {
-  color: orange;
+  color: #4f98ca;
 }
 footer a svg {
-  color: teal;
+  color: #50d890;
 }
 
 
@@ -291,4 +351,5 @@ footer p {
   font-size: .9em;
   padding: 5px;
   margin: 0;
+  color: #50d890;
 }
