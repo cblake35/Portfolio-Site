@@ -1,7 +1,7 @@
 body {
   width: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -11,13 +11,20 @@ h2 {
   text-align: center;
   font-size: 2.2em;
   text-transform: uppercase;
-
+  padding-top: 40px;
+  margin-bottom: 0;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #272727;
+}
 
+hr {
+  border: 3px solid #93b5b3;
+  width: 5em;
+  border-radius: 3em;
+  margin-bottom: 40px;
 }
 
 
@@ -53,9 +60,9 @@ nav a:hover {
 /** intro styles **/
 
 .intro {
-  height: 100vh;
+  height:99vh;
   background-image: url("Images/intro_background.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -87,6 +94,8 @@ h1 {
 
 .intro svg {
   padding-top: 100px;
+  position: absolute;
+  bottom: 0;
 }
 
 .intro p {
@@ -96,7 +105,7 @@ h1 {
 /** about me styles **/
 
 .about h2 {
-  padding-top: 30px;
+
 }
 
 .me {
@@ -117,7 +126,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 50px 25% 50px 25%;
+  padding: 50px 23% 50px 23%;
 }
 
 .three_pillars svg {
@@ -127,25 +136,41 @@ h1 {
   color: #2c92d7;
 }
 
-h3 {
+.pillars h3 {
   text-align: center;
   color: white;
+  margin: 5px 0 5px 0;
 }
 
 .pillars {
-  padding: 20px 20px 0 20px;
+  padding: 10px 20px 0 20px;
   margin: 0 20px 0 20px;
-  border-radius: 10px;
+  border-radius: 200px;
   background-color: #93b5b3;
   text-align: center;
   border-top-style: solid;
   border-top-color: #4f98ca;
   border-top-width: 7px;
   box-shadow: 0px 3px 5px #63707e;
+  width: 33%;
+}
+
+.svg_wrapper {
+  background-color: white;
+  border-radius: 200px;
+  width: 8em;
+  padding: 25px 0 25px 0;
+  margin: auto;
+  border-style: solid;
+  border-width: thin;
+  border-color: #50d890;
 }
 
 .pillars p {
   color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 25px 25px 25px;
 }
 
 /** skills section **/
@@ -156,20 +181,32 @@ h3 {
 }
 
 .skills_wrapper h2 {
-  padding-top: 7%;
-  text-transform: uppercase;
-  margin: 0;
+  padding-top: 80px;
 }
 
+.skills_wrapper h3 {
+  color: white;
+}
 .skills {
   display: flex;
   justify-content: space-around;
-  padding: 50px 35% 50px 35%;
+  padding: 10px 35% 50px 35%;
 }
 
 .skills svg {
   font-size: 40px;
   color: #2c92d7;
+}
+
+.skills_svgbox {
+  background-color: white;
+  margin: auto;
+  width: 4em;
+  padding: 10px;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: thin;
+  border-color: #50d890;
 }
 
 .skill_list {
@@ -215,7 +252,8 @@ h3 {
 }
 
 .recent_work h2 {
-  padding-top: 30px;
+  margin: 0 40% 0 40%;
+
 }
 
 .project_list img {
@@ -317,9 +355,7 @@ h3 {
 }
 
 .contact_link h2 {
-  text-transform: uppercase;
-  margin: 15px 0 15px 0;
-  color: #272727;
+
 }
 
 .contact_link h3 {
