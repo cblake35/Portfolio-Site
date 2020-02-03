@@ -1,6 +1,7 @@
 body {
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,6 +65,7 @@ nav a:hover {
   background-image: url("Images/intro_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 h1 {
