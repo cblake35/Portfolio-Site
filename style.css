@@ -173,7 +173,6 @@ h1 {
 /** skills section **/
 .skills_wrapper {
   background-color: #effffb;
-  height: 70vh;
 }
 
 .skills_wrapper h2 {
@@ -187,7 +186,7 @@ h1 {
 .skills {
   display: flex;
   justify-content: space-around;
-  padding: 10px 35% 50px 35%;
+  padding: 10px 35% 100px 35%;
 }
 
 .skills svg {
@@ -253,12 +252,6 @@ h3 {
   padding: 0 20px 0 20px;
 }
 
-.project_list p {
-  padding: 0 20px 0 20px;
-  text-align: left;
-  margin: auto;
-}
-
 .img_wrapper {
   position: relative;
 }
@@ -279,7 +272,7 @@ h3 {
 }
 
 .img_wrapper a {
-  font-size: 15px;
+  font-size: 30px;
   color: white;
   text-decoration: none;
 }
@@ -288,33 +281,49 @@ h3 {
   color: #272727;
 }
 
-.img_info1 {
+.img_button1 {
   position: absolute;
-  top: 25%;
-  left: 13%;
+  top: 30%;
+  left: 25%;
   text-align: center;
   display: none;
   border-style: solid;
   border-color: #50d890;
-  padding: 7px;
+  padding: 20px;
 }
 
-.img_info2 {
+.img_button2 {
   position: absolute;
-  top: 25%;
-  left: 27%;
+  top: 30%;
+  left: 25%;
   text-align: center;
   display: none;
   border-style: solid;
   border-color: #50d890;
-  padding: 7px;
+  padding: 20px;
 }
 
-.img_wrapper:hover .img_info1 {
+.recent_info1 {
+  padding: 0 20px 0 20px;
+  text-align: left;
+  margin: auto;
+}
+
+.recent_info2 {
+  padding: 0 20px 0 20px;
+  text-align: left;
+  margin: auto;
+}
+
+.recent_info h3 {
+  margin-top: 0;
+}
+
+.img_wrapper:hover .img_button1 {
   display: block;
 }
 
-.img_wrapper:hover .img_info2 {
+.img_wrapper:hover .img_button2 {
   display: block;
 }
 
@@ -546,4 +555,90 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #50d890;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1500px) {
+  .three_pillars {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 15% 50px 15%;
+  }
+
+  .pillars {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .project_list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25% 0 25%;
+  }
+
+  .recent_info1 {
+    text-align: center;
+    padding: 0 25px 25px 25px;
+  }
+
+  .recent_info2 {
+    text-align: center;
+    padding: 25px 25px 0 25px;
+  }
+
+  .button_wrapper {
+    padding: 35px 0 35px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .three_pillars {
+    flex-direction: column;
+    padding: 50px 5% 50px 5%;
+    align-items: center;
+  }
+
+  .me p {
+    padding: 0 20% 0 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pillars {
+    width: 75%;
+  }
+
+  .me p {
+    padding: 0 20% 0 20%;
+  }
+
+  .recent_work h2 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills {
+    flex-direction: column;
+    padding: 10px 10% 100px 10%;
+    align-items: center;
+  }
+
+  #skill1 {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  #skill3 {
+    border-top-right-radius: 0;
+  }
+
+  .project_list img {
+    width: 250px;
+  }
+
+  .project_list {
+    padding: 0 5% 0 5%;
+  }
 }
