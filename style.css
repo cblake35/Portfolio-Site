@@ -1,7 +1,7 @@
 body {
   width: 100%;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Martel', sans-serif;
 }
 
 h2 {
@@ -28,13 +28,17 @@ hr {
 
 /** nav styles **/
 nav {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
   top: 0;
   background-color: #272727;
-  padding: 12px 0 12px 0;
+  padding: 10px 0 10px 0;
+  border-bottom-style: solid;
+  border-bottom-color: #4f98ca;
+  border-bottom-width: thin;
 }
 
 .nav_buttons {
@@ -57,6 +61,22 @@ nav a:hover {
   color: #50d890;
 }
 
+#menu_icon {
+  top: 0;
+  position: absolute;
+  font-size: 2em;
+  display: none;
+  color: white;
+}
+
+#menu_icon p {
+  margin: 0;
+}
+
+.nav_drawer {
+  display: none;
+}
+
 /** intro styles **/
 .intro {
   height: 99vh;
@@ -66,9 +86,14 @@ nav a:hover {
   background-position: top center;
 }
 
+.intro_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+}
+
 h1 {
-  position: absolute;
-  top: 300px;
   width: 100%;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -83,8 +108,6 @@ h1 {
 }
 
 .intro_phrase {
-  position: absolute;
-  top: 400px;
   width: 100%;
   text-align: center;
   font-size: 2em;
@@ -355,11 +378,9 @@ h3 {
   text-align: center;
 }
 
-.contact_link h2 {}
 
 .contact_link h3 {
   color: #2c92d7;
-  ;
   margin: 10px 0 10px 0;
 }
 
@@ -437,8 +458,10 @@ footer p {
 .work_info1 {
   position: absolute;
   display: none;
-  top: 110;
-  left: 29%;
+  top: 50%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -75px;
   text-align: center;
   display: none;
   border-style: solid;
@@ -449,8 +472,10 @@ footer p {
 .work_info2 {
   position: absolute;
   display: none;
-  top: 110;
-  left: 18%;
+  top: 50%;
+  left: 50%;
+  margin-left: -180px;
+  margin-top: -75px;
   text-align: center;
   display: none;
   border-style: solid;
@@ -461,8 +486,10 @@ footer p {
 .work_info3 {
   position: absolute;
   display: none;
-  top: 110;
-  left: 21%;
+  top: 50%;
+  left: 50%;
+  margin-left: -165px;
+  margin-top: -75px;
   text-align: center;
   display: none;
   border-style: solid;
@@ -473,8 +500,10 @@ footer p {
 .work_info4 {
   position: absolute;
   display: none;
-  top: 110;
-  left: 22%;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -75px;
   text-align: center;
   display: none;
   border-style: solid;
@@ -514,9 +543,8 @@ footer p {
   text-decoration: none;
 }
 
-/** Contact page sty;es **/
+/** Contact page styles **/
 .contact {
-  height: 90vh;
 }
 
 .info {
@@ -525,13 +553,14 @@ footer p {
 }
 
 .contact h2 {
-  margin-top: 3em;
+  margin: 0;
+  padding-top: 3em;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin: 0 40% 0 40%;
+  margin: 0;
   padding: 50px;
   align-items: center;
 }
@@ -604,6 +633,57 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (max-width: 770px) {
+  nav {
+    padding: 25px 0 25px 0;
+  }
+
+  .nav_buttons {
+    display: none;
+  }
+
+  .nav_drawer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    transform: translate(0, -500px);
+    transition: transform .2s ease;
+  }
+
+  .nav_drawer.open {
+    transform: translate(0, 51px);
+  }
+
+  .nav_drawer a {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    background-color: #272727;
+    color: #effffb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: #4f98ca;
+    border-bottom-width: thin;
+  }
+
+  .nav_drawer a:hover {
+    color: #50d890;
+  }
+
+  #menu_icon {
+    display: inline-block;
+  }
+
+  #menu_icon:hover {
+    color: #50d890;
+    cursor: pointer;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .pillars {
     width: 75%;
@@ -615,6 +695,11 @@ input[type=submit]:hover {
 
   .recent_work h2 {
     margin: 0;
+  }
+
+  .work_list img {
+    width: 90%;
+    padding: 0 5% 0 5%;
   }
 }
 

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
   <head>
@@ -8,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Montserrat:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e18023e564.js" crossorigin="anonymous"></script>
     <title>Chris's Online Portfolio</title>
-
+  </head>
 
   <body>
     <nav>
@@ -28,42 +29,21 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <div class="work_section">
-      <h2>My Work</h2>
+    <div class="contact">
+      <h2>Here's how to reach me.</h2>
       <hr>
-      <div class="work_wrapper">
-        <div class="work_list">
-          <img src="Images/tindog.jpg" alt="">
-          <div class="work_info1">
-            <h3>Tindog</h3>
-            <p>A mockup dating site, for dogs!</p>
-            <button type="button" name="button"><a href="https://github.com/cblake35/Tindog">learn more</a></button>
-          </div>
-        </div>
-        <div class="work_list">
-          <img src="Images/restaurant_app2.jpg" alt="">
-          <div class="work_info2">
-            <h3>Restaurant Reviews App</h3>
-            <p>A restaurant review site utilizing the Mapbox API.</p>
-            <button type="button" name="button"><a href="https://github.com/cblake35/Restaurant-Reviews-App">learn more</a></button>
-          </div>
-        </div>
-        <div class="work_list">
-          <img src="Images/memory_game2.jpg" alt="">
-          <div class="work_info3">
-            <h3>Memory Game</h3>
-            <p>A memory matching game. Match all 8 pairs!</p>
-            <button type="button" name="button"><a href="https://github.com/cblake35/Memory-Game">learn more</a></button>
-          </div>
-        </div>
-        <div class="work_list">
-          <img src="Images/insect_escape.jpg" alt="">
-          <div class="work_info4">
-            <h3>Insect Escape</h3>
-            <p>Avoid the insects and reach the finish line.</p>
-            <button type="button" name="button"><a href="https://github.com/cblake35/Insect-Escape">learn more</a></button>
-          </div>
-        </div>
+      <div class="info">
+        <form action="mailto:chrisblake00@gmail.com" method="post" enctype="text/plain">
+          <label> Name </label>
+          <input type="text" name="yourname" placeholder="Your name...">
+          <label> Email </label>
+          <input type="text" name="youremail" placeholder="Youe email...">
+          <label> Subject </label>
+          <input type="text" name="subject" placeholder="Title of message...">
+          <label> Message </label>
+          <textarea name="yourmessage" placeholder="Write something..." rows="8" cols="40"></textarea>
+          <input type="submit" class="submit-button">
+        </form>
       </div>
     </div>
 
@@ -84,5 +64,4 @@
           });
     </script>
   </body>
-
 </html>

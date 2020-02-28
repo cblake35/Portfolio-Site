@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel:300,400,600,700|Montserrat:400,500,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e18023e564.js" crossorigin="anonymous"></script>
     <title>Chris's Online Portfolio</title>
   </head>
@@ -15,15 +15,26 @@
     <nav>
       <div class="nav_buttons">
         <a href="index.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="menu_icon">
+          <p> ☰ </p>
       </div>
     </nav>
 
+    <div class="nav_drawer">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
     <div class="intro">
-      <h1>I'm Chris</h1>
-      <div class="intro_phrase">
-        <p>a web developer</p>
+      <div class="intro_wrapper">
+        <h1>I'm Chris</h1>
+        <div class="intro_phrase">
+          <p>a web developer</p>
+        </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="white" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,197.3C672,192,768,96,864,64C960,32,1056,
@@ -167,6 +178,17 @@
       <a href="https://www.linkedin.com/in/cblake35"><i class="fab fa-linkedin"></i></a>
       <p>© 2020 Chris Blake. All rights reserved.</p>
     </footer>
+
+
+    <script>
+          var menu = document.querySelector("#menu_icon");
+          var drawer = document.querySelector(".nav_drawer")
+
+          menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+          });
+    </script>
 
   </body>
 
