@@ -4,8 +4,11 @@ body {
   font-family: 'Martel', sans-serif;
 }
 
-h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
   color: #272727;
   text-align: center;
   font-size: 2.2em;
@@ -15,7 +18,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   color: #272727;
 }
 
@@ -23,10 +25,18 @@ hr {
   border: 3px solid #93b5b3;
   width: 5em;
   border-radius: 3em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-/** nav styles **/
+button a {
+  padding: 6px;
+}
+
+button {
+  box-shadow: 0 3px 5px;
+}
+
+/** Nav styles **/
 nav {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
@@ -77,7 +87,7 @@ nav a:hover {
   display: none;
 }
 
-/** intro styles **/
+/** Intro styles **/
 .intro {
   height: 99vh;
   background-image: url("Images/intro_background.jpg");
@@ -96,10 +106,9 @@ nav a:hover {
 h1 {
   width: 100%;
   text-align: center;
-  font-family: 'Lato', sans-serif;
   font-size: 4em;
   text-transform: uppercase;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 0 0;
   color: #effffb;
 }
 
@@ -110,7 +119,7 @@ h1 {
 .intro_phrase {
   width: 100%;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -122,17 +131,17 @@ h1 {
 }
 
 .intro p {
-  margin: 20px 0 20px 0;
+  margin: 0;
 }
 
-/** about me styles **/
-.about h2 {}
-
+/** About me styles **/
 .me {
+  padding-top: 25px;
   text-align: center;
 }
 
 .me img {
+  width: 200px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #63707e;
 }
@@ -193,7 +202,7 @@ h1 {
   padding: 0 25px 25px 25px;
 }
 
-/** skills section **/
+/** Skills section **/
 .skills_wrapper {
   background-color: #effffb;
 }
@@ -261,7 +270,7 @@ h3 {
   color: white;
 }
 
-/** recent projects **/
+/** Recent projects **/
 .project_list {
   display: flex;
   padding: 30px 25% 30px 25%;
@@ -307,7 +316,7 @@ h3 {
 .img_button1 {
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 23%;
   text-align: center;
   display: none;
   border-style: solid;
@@ -318,7 +327,7 @@ h3 {
 .img_button2 {
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 23%;
   text-align: center;
   display: none;
   border-style: solid;
@@ -359,7 +368,6 @@ h3 {
   background-color: #4f98ca;
   border-radius: 3px;
   border-style: none;
-  box-shadow: 0px 3px 5px #93b5b3;
 }
 
 .project_button:hover {
@@ -373,11 +381,17 @@ h3 {
   border-style: none;
 }
 
-/** contact styles **/
-.contact_link {
-  text-align: center;
+.project_wrapper h3 {
+  border-bottom: 2px solid #c8dad3;
+  margin: 0 0 30px 0;
 }
 
+/** Contact styles **/
+.contact_link {
+  text-align: center;
+  padding: 0 5% 5% 5%;
+  background-color: #effffb;
+}
 
 .contact_link h3 {
   color: #2c92d7;
@@ -389,7 +403,6 @@ h3 {
   background-color: #4f98ca;
   border-style: none;
   border-radius: 3px;
-  box-shadow: 0px 3px 5px #93b5b3;
 }
 
 .contact_link p {
@@ -405,11 +418,11 @@ h3 {
   background-color: #50d890;
 }
 
-/** footer styles **/
+/** Footer styles **/
 footer {
   text-align: center;
   background-color: #272727;
-  margin: 50px 0 0 0;
+  margin: 0;
   padding: 20px 0 20px 0;
 }
 
@@ -427,13 +440,13 @@ footer a svg {
 }
 
 footer p {
-  font-size: .9em;
+  font-size: .7em;
   padding: 5px;
   margin: 0;
   color: #50d890;
 }
 
-/** Project Section **/
+/** Project page Section **/
 .work_section {
   padding-top: 5em;
 }
@@ -531,6 +544,7 @@ footer p {
   background-color: #4f98ca;
   border-radius: 3px;
   border-style: none;
+  margin-bottom: 8px;
 }
 
 .work_list button:hover {
@@ -544,9 +558,6 @@ footer p {
 }
 
 /** Contact page styles **/
-.contact {
-}
-
 .info {
   padding: 2em 0 5em 0;
   background-color: #effffb;
@@ -580,6 +591,7 @@ input[type=submit] {
   border-style: none;
   font-size: 22px;
   color: white;
+  box-shadow: 0 3px 5px;
 }
 
 input[type=submit]:hover {
@@ -618,6 +630,10 @@ input[type=submit]:hover {
 
   .button_wrapper {
     padding: 35px 0 35px 0;
+  }
+
+  .project_wrapper h3 {
+    margin: 20px 0 20px 0;
   }
 }
 
@@ -701,6 +717,48 @@ input[type=submit]:hover {
     width: 90%;
     padding: 0 5% 0 5%;
   }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .intro_phrase p {
+    font-size: .7em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .work_list h3 {
+    font-size: .9em
+  }
+
+  .work_list p {
+    font-size: .85em
+  }
+
+  .work_info1 {
+    margin-left: -102px;
+    margin-top: -60px;
+  }
+
+  .work_info2 {
+    margin-left: -158px;
+    margin-top: -60px;
+  }
+
+  .work_info3 {
+    margin-left: -143px;
+    margin-top: -60px;
+  }
+
+  .work_info4 {
+    margin-left: -135px;
+    margin-top: -60px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -719,11 +777,55 @@ input[type=submit]:hover {
     border-top-right-radius: 0;
   }
 
+  .img_button1 {
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+
+  .img_button2 {
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+
   .project_list img {
     width: 250px;
   }
 
   .project_list {
     padding: 0 5% 0 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .work_list p {
+    display: none;
+  }
+
+  .work_info1 {
+    margin-left: -57px;
+    margin-top: -50px;
+  }
+
+  .work_info2 {
+    margin-left: -115px;
+    margin-top: -50px;
+  }
+
+  .work_info3 {
+    margin-left: -70px;
+    margin-top: -50px;
+  }
+
+  .work_info4 {
+    margin-left: -68px;
+    margin-top: -50px;
+  }
+
+  .me img {
+    width: 75%;
   }
 }
