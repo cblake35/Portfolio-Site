@@ -24,7 +24,7 @@ h3 {
 }
 
 hr {
-  border: 3px solid #93b5b3;
+  border: 3px solid #007acd;
   width: 5em;
   border-radius: 3em;
   margin-bottom: 20px;
@@ -49,7 +49,7 @@ nav {
   background-color: #272727;
   padding: 10px 0 10px 0;
   border-bottom-style: solid;
-  border-bottom-color: #4f98ca;
+  border-bottom-color: #007acd;
   border-bottom-width: thin;
 }
 
@@ -150,56 +150,47 @@ h1 {
 }
 
 .me p {
-  padding: 25px 35% 25px 35%;
+  padding: 30px 35% 20px 35%;
 }
 
-.three_pillars {
+.two_pillars {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 50px 23% 50px 23%;
+  justify-content: space-evenly;
+  padding: 20px 28% 50px 28%;
 }
 
-.three_pillars svg {
+.two_pillars svg {
   font-size: 75px;
   text-align: center;
   width: 100%;
-  color: #2c92d7;
+  color: #007acd;
 }
 
 .pillars h3 {
   text-align: center;
-  color: white;
-  margin: 5px 0 5px 0;
+  color: #007acd;
+  margin: 20px 0 20px 0;
   font-size: 1.25em;
 }
 
 .pillars {
   padding: 10px 20px 0 20px;
   margin: 0 20px 0 20px;
-  border-radius: 200px;
-  background-color: #93b5b3;
   text-align: center;
-  border-top-style: solid;
-  border-top-color: #4f98ca;
-  border-top-width: 7px;
-  box-shadow: 0px 3px 5px #63707e;
-  width: 33%;
+  width: 50%;
 }
 
 .svg_wrapper {
-  background-color: white;
+  background-color: #f2f6f5;
   border-radius: 200px;
   width: 8em;
   padding: 25px 0 25px 0;
   margin: auto;
-  border-style: solid;
-  border-width: thin;
-  border-color: #50d890;
 }
 
 .pillars p {
-  color: white;
+  color: #272727;
   font-size: 14px;
   margin: 0;
   padding: 0 25px 25px 25px;
@@ -207,7 +198,7 @@ h1 {
 
 /** Skills section **/
 .skills_wrapper {
-  background-color: #effffb;
+  background-color: #f2f6f5;
 }
 
 .skills_wrapper h2 {
@@ -215,7 +206,7 @@ h1 {
 }
 
 .skills_wrapper h3 {
-  color: black;
+  color: #007acd;
   font-size: 1.5em;
   padding: 40px 0 20px 0;
 }
@@ -228,7 +219,7 @@ h1 {
 
 .skills svg {
   font-size: 4em;
-  color: #2c92d7;
+  color: #007acd;
 }
 
 .skills_svgbox {
@@ -271,7 +262,7 @@ h3 {
 
 .skill_list li {
   padding: 5px 0 5px 0;
-  color: #2c92d7;
+  color:#272727;
 }
 
 /** Recent projects **/
@@ -289,6 +280,7 @@ h3 {
 .project_list img {
   margin: 0 20px 0 20px;
   border-radius: 25px;
+  box-shadow: 0 3px 8px -3px #000000
 }
 
 .img_wrapper {
@@ -301,9 +293,10 @@ h3 {
 }
 
 .img_wrapper button {
-  background-color: #4f98ca;
+  background-color: #007acd;
   border-radius: 3px;
   border-style: none;
+  margin-top: 40px;
 }
 
 .img_wrapper button:hover {
@@ -323,7 +316,7 @@ h3 {
 .img_button1 {
   position: absolute;
   top: 10%;
-  left: 24%;
+  left: 16%;
   text-align: center;
   display: none;
   padding: 20px;
@@ -332,10 +325,14 @@ h3 {
 .img_button2 {
   position: absolute;
   top: 10%;
-  left: 24%;
+  left: 8%;
   text-align: center;
   display: none;
   padding: 20px;
+}
+
+.img_button2 h3 {
+  font-size: 1.5em;
 }
 
 .img_wrapper:hover .img_button1 {
@@ -352,7 +349,7 @@ h3 {
 }
 
 .project_button {
-  background-color: #4f98ca;
+  background-color: #007acd;
   border-radius: 3px;
   border-style: none;
 }
@@ -369,24 +366,25 @@ h3 {
 }
 
 .project_wrapper h3 {
-  border-bottom: 2px solid #c8dad3;
+  border-bottom: 2px solid #007acd;
+  border-bottom-width: thin;
 }
 
 /** Contact styles **/
 .contact_link {
   text-align: center;
   padding: 0 5% 5% 5%;
-  background-color: #effffb;
+  background-color: #f2f6f5;
 }
 
 .contact_link h3 {
-  color: #2c92d7;
+  color: #007acd;
   margin: 10px 0 10px 0;
 }
 
 .contact_button {
   font-size: 22px;
-  background-color: #4f98ca;
+  background-color: #007acd;
   border-style: none;
   border-radius: 3px;
 }
@@ -418,7 +416,7 @@ footer a {
 }
 
 footer a svg:hover {
-  color: #4f98ca;
+  color: #007acd;
 }
 
 footer a svg {
@@ -527,7 +525,7 @@ footer p {
 }
 
 .work_list button {
-  background-color: #4f98ca;
+  background-color: #007acd;
   border-radius: 3px;
   border-style: none;
   margin-bottom: 8px;
@@ -567,7 +565,7 @@ form {
 
 label {
   padding: 20px 0 0 0;
-  color: #4f98ca;
+  color: #007acd;
   font-weight: 600;
   font-size: 18px;
 }
@@ -575,7 +573,7 @@ label {
 input[type=submit] {
   margin-top: 1em;
   width: 100px;
-  background-color: #4f98ca;
+  background-color: #007acd;
   border-radius: 3px;
   border-style: none;
   font-size: 22px;
@@ -671,7 +669,7 @@ input[type=submit]:hover {
     padding-bottom: 10px;
     text-decoration: none;
     border-bottom-style: solid;
-    border-bottom-color: #4f98ca;
+    border-bottom-color: #007acd;
     border-bottom-width: thin;
   }
 
