@@ -12,6 +12,7 @@ h2 {
   color: #272727;
   text-align: center;
   font-size: 2.2em;
+  font-weight: 700;
   text-transform: uppercase;
   padding-top: 40px;
   margin-bottom: 0;
@@ -19,6 +20,7 @@ h2 {
 
 h3 {
   color: #272727;
+  font-weight: 600;
 }
 
 hr {
@@ -33,7 +35,7 @@ button a {
 }
 
 button {
-  box-shadow: 0 3px 5px;
+  box-shadow: 0 3px 8px -3px #000000;
 }
 
 /** Nav styles **/
@@ -107,6 +109,7 @@ h1 {
   width: 100%;
   text-align: center;
   font-size: 4em;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 20px 0 0 0;
   color: #effffb;
@@ -147,8 +150,7 @@ h1 {
 }
 
 .me p {
-  padding-left: 35%;
-  padding-right: 35%;
+  padding: 25px 35% 25px 35%;
 }
 
 .three_pillars {
@@ -169,6 +171,7 @@ h1 {
   text-align: center;
   color: white;
   margin: 5px 0 5px 0;
+  font-size: 1.25em;
 }
 
 .pillars {
@@ -212,48 +215,49 @@ h1 {
 }
 
 .skills_wrapper h3 {
-  color: white;
+  color: black;
+  font-size: 1.5em;
+  padding: 40px 0 20px 0;
 }
 
 .skills {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 35% 100px 35%;
+  width: 100%;
+  padding: 10px 25% 100px 25%;
+  margin: 0;
 }
 
 .skills svg {
-  font-size: 40px;
+  font-size: 4em;
   color: #2c92d7;
 }
 
 .skills_svgbox {
-  background-color: white;
   margin: auto;
-  width: 4em;
+  width: 6em;
   padding: 10px;
-  border-radius: .5em;
-  border-style: solid;
-  border-width: thin;
-  border-color: #50d890;
+
 }
 
 .skill_list {
   text-align: center;
-  background-color: #93b5b3;
+  background-color: #ffffff;
   padding: 25px;
   width: 150px;
-  border-top-style: solid;
-  border-top-color: #2c92d7;
-  border-top-width: 5px;
-  box-shadow: 0 3px 4px #63707e;
+  border-style: solid;
+  border-width: thin;
+  border-color: #dedede;
+  box-shadow: 0 6px 5px -4px #c8c8c8
+
 }
 
 #skill1 {
-  border-top-left-radius: 8px;
+  border-top-left-radius: 20px;
+  border-right-style: none;
 }
 
 #skill3 {
-  border-top-right-radius: 8px;
+  border-top-right-radius: 20px;
+  border-left-style: none;
 }
 
 h3 {
@@ -267,13 +271,15 @@ h3 {
 
 .skill_list li {
   padding: 5px 0 5px 0;
-  color: white;
+  color: #2c92d7;
 }
 
 /** Recent projects **/
-.project_list {
+.project_wrapper {
   display: flex;
-  padding: 30px 25% 30px 25%;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 0 50px 0;
 }
 
 .recent_work h2 {
@@ -281,7 +287,8 @@ h3 {
 }
 
 .project_list img {
-  padding: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
+  border-radius: 25px;
 }
 
 .img_wrapper {
@@ -304,7 +311,7 @@ h3 {
 }
 
 .img_wrapper a {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
 }
@@ -315,40 +322,20 @@ h3 {
 
 .img_button1 {
   position: absolute;
-  top: 30%;
-  left: 23%;
+  top: 10%;
+  left: 24%;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
   padding: 20px;
 }
 
 .img_button2 {
   position: absolute;
-  top: 30%;
-  left: 23%;
+  top: 10%;
+  left: 24%;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
   padding: 20px;
-}
-
-.recent_info1 {
-  padding: 0 20px 0 20px;
-  text-align: left;
-  margin: auto;
-}
-
-.recent_info2 {
-  padding: 0 20px 0 20px;
-  text-align: left;
-  margin: auto;
-}
-
-.recent_info h3 {
-  margin-top: 0;
 }
 
 .img_wrapper:hover .img_button1 {
@@ -383,7 +370,6 @@ h3 {
 
 .project_wrapper h3 {
   border-bottom: 2px solid #c8dad3;
-  margin: 0 0 30px 0;
 }
 
 /** Contact styles **/
