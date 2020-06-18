@@ -311,6 +311,7 @@ h3 {
 
 .img_wrapper h3 {
   color: #272727;
+  font-weight: 700;
 }
 
 .img_button1 {
@@ -367,7 +368,6 @@ h3 {
 
 .project_wrapper h3 {
   border-bottom: 2px solid #007acd;
-  border-bottom-width: thin;
 }
 
 /** Contact styles **/
@@ -436,13 +436,17 @@ footer p {
 }
 
 .work_wrapper {
-  margin: 0 10% 0 10%;
+  margin: 50px 10% 150px 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
+.work_wrapper h3 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #007acd;
+}
 .work_list {
   position: relative;
 }
@@ -461,8 +465,6 @@ footer p {
   margin-top: -75px;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
   padding: 7px;
 }
 
@@ -475,8 +477,6 @@ footer p {
   margin-top: -75px;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
   padding: 7px;
 }
 
@@ -489,8 +489,6 @@ footer p {
   margin-top: -75px;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
   padding: 7px;
 }
 
@@ -503,8 +501,54 @@ footer p {
   margin-top: -75px;
   text-align: center;
   display: none;
-  border-style: solid;
-  border-color: #50d890;
+  padding: 7px;
+}
+
+.work_info5 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 40%;
+  margin-left: -175px;
+  margin-top: -75px;
+  text-align: center;
+  display: none;
+  padding: 7px;
+}
+
+.work_info6 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -75px;
+  text-align: center;
+  display: none;
+  padding: 7px;
+}
+
+.work_info7 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 45%;
+  margin-left: -175px;
+  margin-top: -75px;
+  text-align: center;
+  display: none;
+  padding: 7px;
+}
+
+.work_info8 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 38%;
+  margin-left: -175px;
+  margin-top: -75px;
+  text-align: center;
+  display: none;
   padding: 7px;
 }
 
@@ -521,6 +565,22 @@ footer p {
 }
 
 .work_list:hover .work_info4 {
+  display: block;
+}
+
+.work_list:hover .work_info5 {
+  display: block;
+}
+
+.work_list:hover .work_info6 {
+  display: block;
+}
+
+.work_list:hover .work_info7 {
+  display: block;
+}
+
+.work_list:hover .work_info8 {
   display: block;
 }
 
