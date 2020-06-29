@@ -512,8 +512,8 @@ footer p {
   position: absolute;
   display: none;
   top: 50%;
-  left: 40%;
-  margin-left: -175px;
+  left: 50%;
+  margin-left: -80px;
   margin-top: -75px;
   text-align: center;
   display: none;
@@ -525,7 +525,7 @@ footer p {
   display: none;
   top: 50%;
   left: 50%;
-  margin-left: -175px;
+  margin-left: -160px;
   margin-top: -75px;
   text-align: center;
   display: none;
@@ -536,8 +536,8 @@ footer p {
   position: absolute;
   display: none;
   top: 50%;
-  left: 45%;
-  margin-left: -175px;
+  left: 50%;
+  margin-left: -195px;
   margin-top: -75px;
   text-align: center;
   display: none;
@@ -548,8 +548,8 @@ footer p {
   position: absolute;
   display: none;
   top: 50%;
-  left: 38%;
-  margin-left: -175px;
+  left: 50%;
+  margin-left: -240px;
   margin-top: -75px;
   text-align: center;
   display: none;
@@ -647,6 +647,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #50d890;
+}
+
+textarea {
+  resize: both;
 }
 
 /* Responsiveness */
@@ -820,7 +824,7 @@ input[type=submit]:hover {
   }
 
   .work_list img {
-    width: 90%;
+    width: 100%;
     padding: 0 5% 0 5%;
   }
 
@@ -899,6 +903,27 @@ input[type=submit]:hover {
     margin-left: -152px;
     margin-top: -60px;
   }
+
+  .work_info5 {
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+
+  .work_info6 {
+    margin-left: -140px;
+    margin-top: -60px;
+  }
+
+  .work_info7 {
+    margin-left: -170px;
+    margin-top: -60px;
+  }
+
+  .work_info8 {
+    margin-left: -215px;
+    margin-top: -75px;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -955,9 +980,6 @@ input[type=submit]:hover {
   .contact_link p {
     font-size: .85em;
   }
-}
-
-@media screen and (max-width: 450px) {
 
   .work_list p {
     display: none;
@@ -969,19 +991,43 @@ input[type=submit]:hover {
   }
 
   .work_info2 {
-    margin-left: -115px;
+    margin-left: -110px;
     margin-top: -50px;
   }
 
   .work_info3 {
-    margin-left: -70px;
+    margin-left: -65px;
     margin-top: -50px;
   }
 
   .work_info4 {
-    margin-left: -68px;
+    margin-left: -65px;
     margin-top: -50px;
   }
+
+  .work_info5 {
+    margin-left: -57px;
+    margin-top: -50px;
+  }
+
+  .work_info6 {
+    margin-left: -60px;
+    margin-top: -50px;
+  }
+
+  .work_info7 {
+    margin-left: -66px;
+    margin-top: -50px;
+  }
+
+  .work_info8 {
+    margin-left: -90px;
+    margin-top: -50px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 450px) {
 
   .me img {
     width: 75%;
